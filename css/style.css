@@ -1,4 +1,4 @@
-/* =====================================================================
+/* =====================================================================l
    FINN GRAPHICS — DESIGN TOKENS
    ===================================================================== */
 :root {
@@ -755,7 +755,7 @@ h1, h2, h3 {
   to { transform: translateX(-50%); }
 }
 
-.logo-item { flex: none; height: 40px; display: flex; align-items: center; }
+.logo-item { flex: none; height: 60px; display: flex; align-items: center; }
 .logo-item img { height: 100%; width: auto; object-fit: contain; }
 
 .logo-fallback {
