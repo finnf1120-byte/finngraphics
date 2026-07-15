@@ -1,23 +1,6 @@
 {
   "projects": [
     {
-      "title": "MUDGEE",
-      "sport": "Basketball",
-      "category": "Branding",
-      "status": "client",
-      "images": [
-        {
-          "src": "/images/projects/broadbeachrevision1.png",
-          "caption": "Primary crest"
-        },
-        {
-          "src": "images/projects/northside-hawks-crest-02.jpg",
-          "caption": "Concept sketches"
-        }
-      ],
-      "description": "Full crest and wordmark system for a youth basketball club, designed to work small on jerseys and large on court graphics."
-    },
-    {
       "title": "Riverside FC Home Kit",
       "sport": "Football",
       "category": "Kit",
@@ -37,6 +20,23 @@
         }
       ],
       "description": "Home kit redesign for Riverside FC, built around the club's river-and-stone crest. Add your real project notes here."
+    },
+    {
+      "title": "Northside Hawks Crest",
+      "sport": "Basketball",
+      "category": "Branding",
+      "status": "client",
+      "images": [
+        {
+          "src": "images/projects/northside-hawks-crest-01.jpg",
+          "caption": "Primary crest"
+        },
+        {
+          "src": "images/projects/northside-hawks-crest-02.jpg",
+          "caption": "Concept sketches"
+        }
+      ],
+      "description": "Full crest and wordmark system for a youth basketball club, designed to work small on jerseys and large on court graphics."
     },
     {
       "title": "Matchday Instagram Templates",
@@ -66,7 +66,7 @@
           "caption": ""
         }
       ],
-      "description": "A personal exploration into pattern-cutting and color-blocking for an away kit concept — built to test a new layout idea."
+      "description": "A personal exploration into pattern-cutting and color-blocking for an away kit concept \u2014 built to test a new layout idea."
     },
     {
       "title": "Fictional League Rebrand",
