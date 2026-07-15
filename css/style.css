@@ -756,8 +756,7 @@ h1, h2, h3 {
 }
 
 .logo-item { flex: none; height: 40px; display: flex; align-items: center; }
-.logo-item img { height: 100%; width: auto; object-fit: contain; filter: grayscale(1) brightness(1.6); opacity: 0.7; transition: opacity 0.2s ease, filter 0.2s ease; }
-.logo-item img:hover { filter: none; opacity: 1; }
+.logo-item img { height: 100%; width: auto; object-fit: contain; }
 
 .logo-fallback {
   display: flex;
