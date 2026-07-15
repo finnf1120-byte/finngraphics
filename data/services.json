@@ -2,11 +2,12 @@
   "services": [
     {
       "title": "Kit & Brand Design",
-      "tagline": "For clubs that want to stand out from round one.",
-      "summary": "Whether it's a fresh crest, a full kit redesign, or building a brand from nothing, this is the full identity package \u2014 built to hold up on a jersey, a signage board, and a phone screen alike.",
+      "tagline": "For clubs that want to stand out from round one to the grand-final.",
+      "summary": "Whether it's a fresh new crest, a full kit redesign, or building a new team to a brand from nothing, this is the full identity package - built to hold up on a jersey, a signage board, and a phone screen.",
       "includes": [
         "Club crest & wordmark",
-        "Home, away & training kit design",
+        "Home",
+        "away & training kit",
         "Brand colour & type system",
         "Guidelines so your committee can stay on-brand"
       ],
@@ -15,10 +16,10 @@
     {
       "title": "Matchday Social Content",
       "tagline": "Never miss a post on gameday.",
-      "summary": "A consistent, on-brand template system for lineups, scores, and highlights, so every post looks like it came from the same club \u2014 even when it's put together five minutes before kickoff.",
+      "summary": "A consistent, on-brand template system for lineups, full time or half time scores, and highlights, so every post looks like it came from the same club - even if it's put together five minutes before kickoff.",
       "includes": [
         "Lineup & squad templates",
-        "Live score & result graphics",
+        "Result graphics",
         "Highlight and MOTM templates",
         "Fast-turnaround custom posts"
       ],
@@ -27,7 +28,7 @@
     {
       "title": "Stadium & Event Creative",
       "tagline": "Design that shows up big on gameday.",
-      "summary": "Large-format and in-venue graphics for clubs wanting a stronger presence at the ground itself \u2014 from signage to fan-facing print, built to be seen from the stands.",
+      "summary": "Large-format and in-venue graphics for clubs wanting a stronger presence at the ground itself - from signage to fan-facing print, built to be seen from the stands.",
       "includes": [
         "Stadium banners & signage",
         "Matchday posters & programs",
