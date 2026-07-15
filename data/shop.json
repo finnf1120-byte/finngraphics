@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "title": "Matchday Social Template Pack",
+      "category": "Pack",
+      "price": "$28",
+      "image": "images/shop/matchday-social-template-pack.jpg",
+      "description": "15 editable Instagram post + story templates for lineups, scores, and highlights. Canva and PSD files included.",
+      "buyUrl": "#"
+    },
+    {
+      "title": "Kit Render Mockup Set",
+      "category": "Template",
+      "price": "$18",
+      "image": "images/shop/kit-render-mockup-set.jpg",
+      "description": "Front, back, and 3/4 jersey mockup templates for presenting kit designs to clients fast.",
+      "buyUrl": "#"
+    },
+    {
+      "title": "Away Day \u2014 Single Poster",
+      "category": "Poster",
+      "price": "$8",
+      "image": "images/shop/away-day-single-poster.jpg",
+      "description": "A single high-res matchday poster file, print-ready at A2. Personal or club use.",
+      "buyUrl": "#"
+    },
+    {
+      "title": "Crest Builder Starter Kit",
+      "category": "Template",
+      "price": "$35",
+      "image": "images/shop/crest-builder-starter-kit.jpg",
+      "description": "Modular crest shapes, ribbons, and stars to speed up club branding concepts in Illustrator.",
+      "buyUrl": "#"
+    }
+  ]
+}
