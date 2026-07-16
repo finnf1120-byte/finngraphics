@@ -65,7 +65,17 @@ Sections and cards gently fade and rise into place as you scroll past them, and 
 
 ## The contact form
 
-Wired up for **Netlify Forms** — detected automatically once hosted on Netlify, no setup needed. Submissions show up in your Netlify dashboard, and you can turn on email notifications there too.
+Submits as a plain native form (not JavaScript) straight to **Netlify Forms** — this is the most reliable way Netlify supports, and it's why the form doesn't show an "error" message anymore even if something else on the page has an unrelated hiccup. After submitting, people land on `thank-you.html` with a confirmation message.
+
+### Where do the messages actually go?
+
+**Not** in the `/admin` panel — that's a separate system (it edits your site's content on GitHub) and has no access to form submissions, which live inside Netlify itself. To read messages:
+
+1. Log into **app.netlify.com** → open your site
+2. Click the **Forms** tab in the left sidebar — every submission shows up here, with the sender's name, email, and message
+3. To get emailed the moment someone submits: **Forms → Form notifications → Add notification → Email notification**, and enter `finleyfones@gmail.com`
+
+That gives you a proper inbox-style notification without needing to check the dashboard constantly.
 
 ## Hosting it live (Git-connected, required for the admin panel)
 

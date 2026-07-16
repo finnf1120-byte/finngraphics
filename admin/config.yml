@@ -29,8 +29,8 @@ collections:
               - label: "Status"
                 name: "status"
                 widget: "select"
-                options: [ "client", "personal" ]
-                hint: "client = paid work, personal = your own project"
+                options: [ "client", "personal", "upcoming" ]
+                hint: "client = paid work, personal = your own project, upcoming = a project you're currently working on"
               - label: "Photos"
                 name: "images"
                 widget: "list"

@@ -18,6 +18,8 @@
     .catch((err) => console.error(err));
 
   function initWork(PROJECTS) {
+  const STATUS_LABELS = { client: "Client Work", personal: "Personal", upcoming: "Upcoming" };
+  const STATUS_LABELS_LONG = { client: "Client Work", personal: "Personal Project", upcoming: "Upcoming Project" };
   const emptyState = document.getElementById("emptyState");
   const statusFilters = document.getElementById("statusFilters");
   const categoryFiltersEl = document.getElementById("categoryFilters");
@@ -78,7 +80,7 @@
         <article class="project-card reveal" style="transition-delay:${(i % 3) * 80}ms" data-index="${originalIndex}" tabindex="0" role="button" aria-label="View ${p.title}">
           <div class="card-media">
             <span class="card-number">#${num}</span>
-            <span class="card-status" data-status="${p.status}">${p.status === "client" ? "Client Work" : "Personal"}</span>
+            <span class="card-status" data-status="${p.status}">${STATUS_LABELS[p.status] || p.status}</span>
             ${photoCount > 1 ? `<span class="card-photo-count">${photoCount} photos</span>` : ""}
             ${photoMarkup(p.images[0], p.title)}
           </div>
@@ -167,7 +169,7 @@
     const p = PROJECTS[index];
     const num = String(index + 1).padStart(2, "0");
 
-    lightboxNum.textContent = `#${num} — ${p.status === "client" ? "Client Work" : "Personal Project"}`;
+    lightboxNum.textContent = `#${num} — ${STATUS_LABELS_LONG[p.status] || p.status}`;
     lightboxTitle.textContent = p.title;
     lightboxMeta.textContent = `${p.category} · ${p.sport}`;
     lightboxDesc.textContent = p.description;

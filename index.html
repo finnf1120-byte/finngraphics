@@ -22,24 +22,34 @@
   <div class="wrap header-inner">
     <a href="#top" class="wordmark"><img src="images/brand/ff-logo.png" alt="Finn Graphics" class="wordmark-logo"></a>
     <nav class="main-nav">
-      <a href="index.html#work">Work</a>
+      <a href="index.html#portfolio">Portfolio</a>
       <a href="work-with-me.html">Work With Me</a>
       <a href="shop.html">Shop</a>
       <a href="reviews.html">Reviews</a>
       <a href="index.html#about">About</a>
       <a href="index.html#contact" class="nav-cta">Contact</a>
     </nav>
+    <div class="header-socials">
+      <a href="#" target="_blank" rel="noopener">IG</a>
+      <a href="#" target="_blank" rel="noopener">BE</a>
+      <a href="#" target="_blank" rel="noopener">IN</a>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html#work">Work</a>
+    <a href="index.html#portfolio">Portfolio</a>
     <a href="work-with-me.html">Work With Me</a>
     <a href="shop.html">Shop</a>
     <a href="reviews.html">Reviews</a>
     <a href="index.html#about">About</a>
     <a href="index.html#contact">Contact</a>
+    <div class="mobile-nav-socials">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">Behance</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </nav>
 </header>
 
@@ -54,7 +64,7 @@
       <p class="hero-sub">Kits, marks, and matchday graphics for clubs, brands, and personal projects. Built by <strong>Finn</strong>.</p>
 
       <div class="hero-actions">
-        <a href="#work" class="btn btn-solid">See the work</a>
+        <a href="#portfolio" class="btn btn-solid">See the portfolio</a>
         <a href="work-with-me.html" class="btn btn-outline">Work with me</a>
       </div>
 
@@ -120,7 +130,7 @@
 <!-- ============================================= -->
 <!-- WORK / FILTERS + GRID                          -->
 <!-- ============================================= -->
-<section class="work" id="work">
+<section class="work" id="portfolio">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>THE ROSTER</h2>
@@ -132,6 +142,7 @@
         <button class="filter-btn is-active" data-filter-status="all">All</button>
         <button class="filter-btn" data-filter-status="client">Client Work</button>
         <button class="filter-btn" data-filter-status="personal">Personal</button>
+        <button class="filter-btn" data-filter-status="upcoming">Upcoming</button>
       </div>
       <div class="filter-group" id="categoryFilters">
         <!-- populated by JS from project categories -->
@@ -178,7 +189,11 @@
     <!-- 
       This form works automatically once the site is hosted on Netlify — no setup
       needed beyond the data-netlify="true" attribute below. Netlify detects it at
-      deploy time and routes submissions to your Netlify dashboard / email.
+      deploy time and routes submissions to your Netlify dashboard (Site → Forms),
+      where you can also turn on an email notification for new submissions.
+      This uses a plain native form submission (not JavaScript) since that's the
+      most reliable way Netlify supports — the browser handles it directly, so it
+      still works even if something else on the page has an unrelated JS issue.
       Hosting somewhere else instead? See README.md for how to swap this to
       a service like Formspree in about a minute.
     -->
@@ -187,6 +202,7 @@
       id="contactForm"
       name="contact"
       method="POST"
+      action="/thank-you.html"
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
@@ -209,12 +225,11 @@
       </div>
 
       <button type="submit" class="btn btn-solid" id="contactSubmit">Send message</button>
-      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
     </form>
 
     <div class="contact-divider"><span>or reach out directly</span></div>
 
-    <a href="mailto:hello@finngraphics.com" class="contact-email">hello@finngraphics.com</a>
+    <a href="mailto:finleyfones@gmail.com" class="contact-email">finleyfones@gmail.com</a>
     <div class="socials">
       <a href="#" target="_blank" rel="noopener">Instagram</a>
       <a href="#" target="_blank" rel="noopener">Behance</a>

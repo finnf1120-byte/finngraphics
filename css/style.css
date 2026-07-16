@@ -176,11 +176,15 @@ h1, h2, h3 {
 }
 .main-nav a.nav-cta::after { display: none; }
 .main-nav a:hover { color: var(--chalk); }
-.nav-cta {
+.main-nav .nav-cta {
   border: 1px solid var(--blue);
   color: var(--blue) !important;
   padding: 8px 16px;
   border-radius: 2px;
+  padding-bottom: 8px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
 .nav-cta:hover { background: var(--blue); color: var(--bg) !important; }
 
@@ -194,6 +198,38 @@ h1, h2, h3 {
   padding: 8px;
 }
 .nav-toggle span { width: 22px; height: 2px; background: var(--chalk); display: block; }
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid var(--line);
+}
+.header-socials a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--dim-2);
+  transition: color 0.2s ease;
+}
+.header-socials a:hover { color: var(--blue); }
+
+.mobile-nav-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 18px 28px;
+}
+.mobile-nav-socials a {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.mobile-nav-socials a:hover { color: var(--blue); }
 
 .mobile-nav {
   display: none;
@@ -484,6 +520,7 @@ h1, h2, h3 {
 }
 .card-status[data-status="client"] { background: var(--blue); color: var(--bg); font-weight: 700; }
 .card-status[data-status="personal"] { background: rgba(244,241,232,0.12); color: var(--chalk); border: 1px solid var(--dim-2); }
+.card-status[data-status="upcoming"] { background: transparent; color: var(--blue); border: 1px dashed var(--blue); font-weight: 700; }
 
 .card-photo-count {
   position: absolute;
@@ -1106,6 +1143,7 @@ h1, h2, h3 {
    ===================================================================== */
 @media (max-width: 860px) {
   .main-nav { display: none; }
+  .header-socials { display: none; }
   .nav-toggle { display: flex; }
   .project-grid { grid-template-columns: repeat(2, 1fr); }
   .about-inner { grid-template-columns: 1fr; }

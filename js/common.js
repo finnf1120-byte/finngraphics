@@ -310,47 +310,10 @@
     });
   }
 
-  /* ---------- Contact form (AJAX submit, works with Netlify Forms) ---------- */
-  const form = document.getElementById("contactForm");
-  if (form) {
-    const status = document.getElementById("formStatus");
-    const submitBtn = document.getElementById("contactSubmit");
-
-    const encode = (data) =>
-      Object.keys(data)
-        .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(form).entries());
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Sending…";
-      status.textContent = "";
-      status.classList.remove("is-error");
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode(data)
-      })
-        .then((res) => {
-          if (!res.ok) throw new Error("Request failed");
-          form.reset();
-          status.textContent = "Message sent — thanks, I'll be in touch soon.";
-          submitBtn.textContent = "Send message";
-          submitBtn.disabled = false;
-        })
-        .catch(() => {
-          status.textContent =
-            "Couldn't send that automatically — email me directly at hello@finngraphics.com instead.";
-          status.classList.add("is-error");
-          submitBtn.textContent = "Send message";
-          submitBtn.disabled = false;
-        });
-    });
-  }
+  /* ---------- Contact form ----------
+     Submits natively (no JS) straight to Netlify Forms — see the HTML
+     comment above the <form> in index.html for why this is more reliable
+     than a JS fetch-based submission. Nothing to do here. */
 
   /* ---------- Kick off reveal-on-scroll for static markup already on the page ---------- */
   observeReveals();
