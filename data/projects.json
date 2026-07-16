@@ -84,6 +84,24 @@
           "caption": "Flat image no effects"
         }
       ]
+    },
+    {
+      "sport": "Football",
+      "title": "Olympic FC — NAIDOC Week Quote Template",
+      "category": "Social Media",
+      "status": "client",
+      "description": "An editable quote graphic built for Olympic FC to mark NAIDOC Week — a clean, reusable template designed to spotlight a message or quote with the respect the occasion calls for, while staying fully on-brand with the club's visual system. Built to be simple to update each year: swap in the quote, keep the design consistent.\nhttps://www.instagram.com/p/DaowC3FDUty/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== ",
+      "images": [
+        {
+          "src": "/images/projects/naidocquotesolympicfc.png"
+        },
+        {
+          "src": "/images/projects/naidocquotesolympicfc2.png"
+        },
+        {
+          "src": "/images/projects/naidocquotesolympicfcpreview.png"
+        }
+      ]
     }
   ]
 }
