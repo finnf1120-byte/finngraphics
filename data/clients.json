@@ -2,19 +2,19 @@
   "clients": [
     {
       "name": "Mudgeeraba SC",
-      "image": "images/clients/mudgeeraba-sc.png"
+      "image": "/images/clients/msc-logo-2025.webp"
     },
     {
       "name": "Olympic FC",
-      "image": "images/clients/olympic-fc.png"
+      "image": "/images/clients/olympic_fc_logo.png"
     },
     {
       "name": "Broadbeach United",
-      "image": "images/clients/broadbeach-united.png"
+      "image": "/images/clients/broadbeach_united_sc_logo-removebg-preview.png"
     },
     {
       "name": "Gold Coast Knights",
-      "image": "images/clients/gold-coast-knights.png"
+      "image": "/images/clients/gck-logo-2024-2-stars.png"
     }
   ]
 }
