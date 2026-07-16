@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "title": "Riverside FC Home Kit",
+      "title": "Mudgeeraba SC - 2026 Gameday Collection",
       "sport": "Football",
-      "category": "Kit",
+      "category": "Social Media, Gameday",
       "status": "client",
       "images": [],
-      "description": "Home kit redesign for Riverside FC, built around the club's river-and-stone crest. Add your real project notes here."
+      "description": "A full matchday content system built for Mudgeeraba SC's 2026 season — lineup graphics, result graphics, and Player of the Match templates, all pulling from one consistent visual design. Backed by a running series of premium gameday posters, so every post lands with the same polished, professional look. Built to bring a more premium feel to the club's socials all season long."
     }
   ]
 }
