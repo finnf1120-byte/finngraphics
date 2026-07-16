@@ -1,9 +1,16 @@
 {
   "about": {
-    "photo": "images/about/portrait.jpg",
+    "photo": "/images/about/dsc_4394.jpg",
     "bio": [
-      "Finn designs identity systems for teams and athletes — kits, crests, and the graphics that show up on a scoreboard, a jersey, or a feed on gameday. This space is for client work and the personal projects built just to push the craft further.",
-      "Replace this paragraph with your own bio. Keep it short: what you design, who you've worked with, and what you're looking for next."
+      "Finn Graphics",
+      "identity systems for teams and athletes — graphics",
+      "branding",
+      "and all things design to show up on a scoreboard",
+      "a jersey",
+      "or a feed on gameday. This space is for client work and the personal projects built just to push the craft further.",
+      "Replace this paragraph with your own bio. Keep it short: what you design",
+      "who you've worked with",
+      "and what you're looking for next."
     ]
   }
 }
