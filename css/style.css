@@ -1,4 +1,4 @@
-/* =====================================================================l
+/* =====================================================================
    FINN GRAPHICS — DESIGN TOKENS
    ===================================================================== */
 :root {
@@ -750,12 +750,23 @@ h1, h2, h3 {
 }
 .logo-marquee:hover .logo-track { animation-play-state: paused; }
 
+/* Used when there are too few logos to need scrolling — centered, no
+   duplicates, and sized up by JS to fill the row nicely. */
+.logo-track.logo-track--static {
+  width: 100%;
+  justify-content: center;
+  animation: none;
+}
+/* Prevents a flash of oversized/overlapping logos while JS measures and
+   decides which mode to use. */
+.logo-track.logo-track--measuring { visibility: hidden; }
+
 @keyframes scrollLogos {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 
-.logo-item { flex: none; height: 60px; display: flex; align-items: center; }
+.logo-item { flex: none; height: var(--logo-size, 40px); display: flex; align-items: center; transition: height 0.2s ease; }
 .logo-item img { height: 100%; width: auto; object-fit: contain; }
 
 .logo-fallback {

@@ -70,12 +70,19 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Client logo carousel ---------- */
+  /* ---------- Client logo carousel ----------
+     If a single set of logos is already wide enough to fill the row, they
+     scroll continuously (duplicated once for a seamless loop). If there
+     are too few logos for that, scrolling would show the same badge twice
+     on screen at once — so instead they're centered, shown exactly once,
+     and scaled up to fill the row nicely. */
   const logoTrack = document.getElementById("logoTrack");
-  if (logoTrack) {
+  const logoMarquee = logoTrack ? logoTrack.closest(".logo-marquee") : null;
+  if (logoTrack && logoMarquee) {
     loadJSON("data/clients.json").then((data) => {
       const clients = data && data.clients;
-      if (!clients) return;
+      if (!clients || clients.length === 0) return;
+
       const badge = (client) => {
         const initials = client.name
           .split(" ")
@@ -88,7 +95,6 @@
           <img
             src="${client.image}"
             alt="${client.name}"
-            loading="lazy"
             onerror="this.replaceWith(Object.assign(document.createElement('div'), {
               className: 'logo-fallback',
               innerHTML: '<span class=\\'logo-fallback-initials\\'>${initials}</span><span class=\\'logo-fallback-name\\'>${client.name}</span>'
@@ -96,8 +102,57 @@
           >
         </div>`;
       };
-      const items = clients.map(badge).join("");
-      logoTrack.innerHTML = items + items;
+      const baseSize = 40;
+      const maxScale = 3; // don't let a single logo blow up absurdly large
+
+      function layout() {
+        // Render one set at the default size, hidden, purely to measure it.
+        logoTrack.className = "logo-track logo-track--measuring";
+        logoTrack.style.setProperty("--logo-size", baseSize + "px");
+        logoTrack.innerHTML = clients.map(badge).join("");
+
+        const imgs = logoTrack.querySelectorAll("img");
+        const finish = () => {
+          const containerWidth = logoMarquee.clientWidth;
+          const singleSetWidth = logoTrack.scrollWidth;
+
+          if (singleSetWidth < containerWidth) {
+            // Fits without scrolling — scale up to fill the row, show once, no loop.
+            const scale = Math.min(maxScale, Math.max(1, (containerWidth / singleSetWidth) * 0.92));
+            logoTrack.style.setProperty("--logo-size", Math.round(baseSize * scale) + "px");
+            logoTrack.className = "logo-track logo-track--static";
+          } else {
+            // Enough logos to need scrolling — duplicate once for a seamless loop.
+            logoTrack.style.setProperty("--logo-size", baseSize + "px");
+            const items = clients.map(badge).join("");
+            logoTrack.innerHTML = items + items;
+            logoTrack.className = "logo-track";
+          }
+        };
+
+        if (imgs.length === 0) { finish(); return; }
+        let settled = false;
+        const finishOnce = () => { if (!settled) { settled = true; finish(); } };
+        let remaining = imgs.length;
+        const settle = () => { remaining -= 1; if (remaining <= 0) finishOnce(); };
+        imgs.forEach((img) => {
+          if (img.complete) settle();
+          else {
+            img.addEventListener("load", settle, { once: true });
+            img.addEventListener("error", settle, { once: true });
+          }
+        });
+        // Safety net: don't leave the carousel hidden forever if an image
+        // is unusually slow (or a browser quirk keeps it from firing).
+        setTimeout(finishOnce, 2500);
+      }
+
+      layout();
+      let resizeTimer;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(layout, 200);
+      });
     });
   }
 
@@ -251,6 +306,7 @@
       </article>`
         )
         .join("");
+      if (window.observeReveals) window.observeReveals();
     });
   }
 
