@@ -7,10 +7,10 @@
       "status": "client",
       "images": [
         {
-          "src": "/images/projects/surfers-away.png"
+          "src": "/images/projects/gameday-tweed.png"
         },
         {
-          "src": "/images/projects/gameday-tweed.png"
+          "src": "/images/projects/surfers-away.png"
         },
         {
           "src": "/images/projects/palmy-home.png"
@@ -19,22 +19,22 @@
           "src": "/images/projects/surfers-gameday.jpg"
         },
         {
+          "src": "/images/projects/cup-reschedueled.png"
+        },
+        {
           "src": "/images/projects/gameday.png"
         },
         {
           "src": "/images/projects/musgrave-gameday.png"
         },
         {
-          "src": "/images/projects/potm.png"
-        },
-        {
-          "src": "/images/projects/potm.png"
-        },
-        {
-          "src": "/images/projects/cup-reschedueled.png"
-        },
-        {
           "src": "/images/projects/coomerahome.png"
+        },
+        {
+          "src": "/images/projects/potm.png"
+        },
+        {
+          "src": "/images/projects/artboard-1.png"
         },
         {
           "src": "/images/projects/11p.png"
