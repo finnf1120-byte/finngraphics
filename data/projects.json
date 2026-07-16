@@ -147,6 +147,18 @@
           "src": "/images/projects/naidocquotesolympicfcpreview.png"
         }
       ]
+    },
+    {
+      "title": "Photography Editing",
+      "sport": "Football",
+      "category": "Photography Editing",
+      "status": "upcoming",
+      "images": [
+        {
+          "src": "/images/projects/dsc_6477.png"
+        }
+      ],
+      "description": "*Coming Soon* Colour treatment - cleaning up a raw shot and giving it a consistent, on-brand look ready to use across socials."
     }
   ]
 }
