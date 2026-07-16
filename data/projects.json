@@ -45,10 +45,7 @@
       "status": "client",
       "images": [
         {
-          "src": "/images/projects/next-up.jpg"
-        },
-        {
-          "src": "/images/projects/musgrave-gameday.png"
+          "src": "/images/projects/potm.png"
         },
         {
           "src": "/images/projects/artboard-1.png"
@@ -57,10 +54,13 @@
           "src": "/images/projects/11p.png"
         },
         {
-          "src": "/images/projects/full.jpg"
+          "src": "/images/projects/musgrave-gameday.png"
         },
         {
-          "src": "/images/projects/potm.png"
+          "src": "/images/projects/next-up.jpg"
+        },
+        {
+          "src": "/images/projects/full.jpg"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "title": "Olympic FC — NAIDOC Week Quote Template",
       "category": "Social Media",
       "status": "client",
-      "description": "An editable quote graphic built for Olympic FC to mark NAIDOC Week — a clean, reusable template designed to spotlight a message or quote with the respect the occasion calls for, while staying fully on-brand with the club's visual system. Built to be simple to update each year: swap in the quote, keep the design consistent.\nhttps://www.instagram.com/p/DaowC3FDUty/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== ",
+      "description": "An editable quote graphic built for Olympic FC to mark NAIDOC Week — a clean, reusable template designed to spotlight a message or quote with the respect the occasion calls for, while staying fully on-brand with the club's visual system. Built to be simple to update each year: swap in the quote, keep the design consistent.",
       "images": [
         {
           "src": "/images/projects/naidocquotesolympicfc.png"
@@ -102,6 +102,31 @@
           "src": "/images/projects/naidocquotesolympicfcpreview.png"
         }
       ]
+    },
+    {
+      "status": "personal",
+      "title": "Sport Posters 2026 Season",
+      "sport": "Football, NRL",
+      "category": "Poster",
+      "images": [
+        {
+          "src": "/images/projects/kamadawc26poster.png",
+          "caption": "Kamada WC26"
+        },
+        {
+          "src": "/images/projects/kane-poster.jpg",
+          "caption": "Kane Pre WC26"
+        },
+        {
+          "src": "/images/projects/kini-keano.jpg",
+          "caption": "Keano Kini Titans"
+        },
+        {
+          "src": "/images/projects/untilnexttime.png",
+          "caption": "Until Next Time"
+        }
+      ],
+      "description": "An ongoing series of sport posters created throughout the 2026 season - each built to give the moment its own poster-worthy treatment rather than a quick generic template. A running showcase of the poster work coming out of the sport seasons as they unfold."
     }
   ]
 }
