@@ -5,20 +5,7 @@
       "sport": "Football",
       "category": "Kit",
       "status": "client",
-      "images": [
-        {
-          "src": "/images/projects/gameday-tweed.png",
-          "caption": "Final home kit render"
-        },
-        {
-          "src": "images/projects/riverside-fc-home-kit-02.jpg",
-          "caption": "Pattern-cutting process"
-        },
-        {
-          "src": "images/projects/riverside-fc-home-kit-03.jpg",
-          "caption": "On-field mockup"
-        }
-      ],
+      "images": [],
       "description": "Home kit redesign for Riverside FC, built around the club's river-and-stone crest. Add your real project notes here."
     }
   ]
