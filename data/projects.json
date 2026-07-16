@@ -1,46 +1,102 @@
 {
   "projects": [
     {
-      "title": "Mudgeeraba SC - 2026 Gameday Collection",
+      "title": "Riverside FC Home Kit",
       "sport": "Football",
-      "category": "Social Media, Gameday",
+      "category": "Kit",
       "status": "client",
       "images": [
         {
-          "src": "/images/projects/surfers-away.png"
+          "src": "images/projects/riverside-fc-home-kit-01.jpg",
+          "caption": "Final home kit render"
         },
         {
-          "src": "/images/projects/gameday-tweed.png"
+          "src": "images/projects/riverside-fc-home-kit-02.jpg",
+          "caption": "Pattern-cutting process"
         },
         {
-          "src": "/images/projects/palmy-home.png"
-        },
-        {
-          "src": "/images/projects/surfers-gameday.jpg"
-        },
-        {
-          "src": "/images/projects/cup-reschedueled.png"
-        },
-        {
-          "src": "/images/projects/gameday.png"
-        },
-        {
-          "src": "/images/projects/musgrave-gameday.png"
-        },
-        {
-          "src": "/images/projects/coomerahome.png"
-        },
-        {
-          "src": "/images/projects/potm.png"
-        },
-        {
-          "src": "/images/projects/artboard-1.png"
-        },
-        {
-          "src": "/images/projects/11p.png"
+          "src": "images/projects/riverside-fc-home-kit-03.jpg",
+          "caption": "On-field mockup"
         }
       ],
-      "description": "A full matchday content system built for Mudgeeraba SC's 2026 season — lineup graphics, result graphics, and Player of the Match templates, all pulling from one consistent visual design. Backed by a running series of premium gameday posters, so every post lands with the same polished, professional look. Built to bring a more premium feel to the club's socials all season long."
+      "description": "Home kit redesign for Riverside FC, built around the club's river-and-stone crest. Add your real project notes here."
+    },
+    {
+      "title": "Northside Hawks Crest",
+      "sport": "Basketball",
+      "category": "Branding",
+      "status": "client",
+      "images": [
+        {
+          "src": "images/projects/northside-hawks-crest-01.jpg",
+          "caption": "Primary crest"
+        },
+        {
+          "src": "images/projects/northside-hawks-crest-02.jpg",
+          "caption": "Concept sketches"
+        }
+      ],
+      "description": "Full crest and wordmark system for a youth basketball club, designed to work small on jerseys and large on court graphics."
+    },
+    {
+      "title": "Matchday Instagram Templates",
+      "sport": "Football",
+      "category": "Social",
+      "status": "client",
+      "images": [
+        {
+          "src": "images/projects/matchday-instagram-templates-01.jpg",
+          "caption": "Lineup template"
+        },
+        {
+          "src": "images/projects/matchday-instagram-templates-02.jpg",
+          "caption": "Full-time score template"
+        }
+      ],
+      "description": "A reusable template set for lineup, score, and highlight posts, matched to the club's brand colors and type."
+    },
+    {
+      "title": "Concept: Away Kit Study",
+      "sport": "Rugby",
+      "category": "Kit",
+      "status": "personal",
+      "images": [
+        {
+          "src": "images/projects/concept-away-kit-study-01.jpg",
+          "caption": ""
+        }
+      ],
+      "description": "A personal exploration into pattern-cutting and color-blocking for an away kit concept \u2014 built to test a new layout idea."
+    },
+    {
+      "title": "Fictional League Rebrand",
+      "sport": "Esports",
+      "category": "Branding",
+      "status": "personal",
+      "images": [
+        {
+          "src": "images/projects/fictional-league-rebrand-01.jpg",
+          "caption": ""
+        },
+        {
+          "src": "images/projects/fictional-league-rebrand-02.jpg",
+          "caption": "Type system"
+        }
+      ],
+      "description": "A speculative rebrand for a fictional esports league, exploring a bolder, more condensed identity system."
+    },
+    {
+      "title": "Gameday Story Pack",
+      "sport": "Basketball",
+      "category": "Social",
+      "status": "personal",
+      "images": [
+        {
+          "src": "images/projects/gameday-story-pack-01.jpg",
+          "caption": ""
+        }
+      ],
+      "description": "A self-directed set of Instagram Story graphics built to sharpen motion and layout skills between client projects."
     }
   ]
 }

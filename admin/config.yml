@@ -110,3 +110,23 @@ collections:
             fields:
               - { label: "Club / Team Name", name: "name", widget: "string" }
               - { label: "Logo", name: "image", widget: "image", media_folder: "/images/clients", public_folder: "/images/clients" }
+
+  - name: "about"
+    label: "About"
+    files:
+      - file: "data/about.json"
+        label: "About Section"
+        name: "about"
+        fields:
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                media_folder: "/images/about"
+                public_folder: "/images/about"
+              - label: "Bio (each item is one paragraph)"
+                name: "bio"
+                widget: "list"

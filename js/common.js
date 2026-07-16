@@ -70,6 +70,31 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* ---------- About section (photo + bio) ---------- */
+  const aboutPortrait = document.getElementById("aboutPortrait");
+  const aboutBio = document.getElementById("aboutBio");
+  if (aboutPortrait || aboutBio) {
+    loadJSON("data/about.json").then((data) => {
+      const about = data && data.about;
+      if (!about) return;
+
+      if (aboutPortrait) {
+        aboutPortrait.innerHTML = `
+          <img
+            src="${about.photo}"
+            alt="Finn, the designer behind Finn Graphics"
+            onerror="this.replaceWith(Object.assign(document.createElement('div'), {
+              className: 'placeholder-img',
+              innerHTML: '<span>ADD PHOTO<br>${about.photo}</span>'
+            }))"
+          >`;
+      }
+      if (aboutBio && about.bio) {
+        aboutBio.innerHTML = about.bio.map((p) => `<p>${p}</p>`).join("");
+      }
+    });
+  }
+
   /* ---------- Client logo carousel ----------
      If a single set of logos is already wide enough to fill the row, they
      scroll continuously (duplicated once for a seamless loop). If there

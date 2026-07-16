@@ -20,7 +20,7 @@ Once set up (steps below), go to **yoursite.com/admin/**, log in, and you can ad
 
 Every change is saved as a real commit to your site's GitHub repo, and Netlify automatically republishes the live site within a minute or so of saving.
 
-**What this doesn't cover:** the hero headline, About bio, and contact email are still plain text inside `index.html` — editing those still means opening the file directly and changing the words (see "Editing page text" below). Only the list-style content above goes through the admin panel.
+**What this doesn't cover:** the hero headline and contact email are still plain text inside `index.html` — editing those still means opening the file directly and changing the words (see "Editing page text" below). The About section (photo + bio) is now covered by the admin panel too.
 
 ### One-time setup (you'll do this yourself in Netlify's dashboard)
 
@@ -49,11 +49,11 @@ Leave that field as `#` and the card shows a "Checkout link coming soon" button 
 
 ## Adding your about photo
 
-Put a photo at `images/about/portrait.jpg` (any image format works — just update the `src` reference in `index.html` if you use a different filename, in the `.about-portrait` section). This one photo isn't part of the admin panel — it's a manual file swap.
+Now editable through the admin panel, same as everything else — open `/admin`, go to **About**, upload a photo and edit your bio there. (Older versions of this README said to hand-edit a file for this — that's no longer needed.)
 
 ## Editing page text
 
-Hero headline, subhead, About bio, and contact email/socials are all plain text inside `index.html` — search for the section you want (marked with comment headers like `<!-- HERO -->`) and edit the words directly. This is the one part of the site the admin panel doesn't reach.
+Hero headline, subhead, and contact email/socials are all plain text inside `index.html` — search for the section you want (marked with comment headers like `<!-- HERO -->`) and edit the words directly. (About's photo and bio moved to the admin panel — see above.)
 
 ## Slideshow project popups
 

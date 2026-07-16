@@ -155,13 +155,14 @@ h1, h2, h3 {
   transition: color 0.2s ease;
   white-space: nowrap;
   position: relative;
-  padding-bottom: 3px;
+  display: inline-flex;
+  align-items: center;
 }
 .main-nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   width: 100%;
   height: 1px;
   background: var(--blue);
@@ -181,7 +182,6 @@ h1, h2, h3 {
   color: var(--blue) !important;
   padding: 8px 16px;
   border-radius: 2px;
-  padding-bottom: 8px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -392,7 +392,7 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 56px;
-  align-items: start;
+  align-items: center;
 }
 .challenges-copy h2 {
   font-size: clamp(30px, 4.5vw, 46px);
@@ -595,7 +595,8 @@ h1, h2, h3 {
   gap: 64px;
   align-items: center;
 }
-.about-portrait { aspect-ratio: 4/5; border-radius: 3px; overflow: hidden; }
+.about-portrait { aspect-ratio: 4/5; border-radius: 3px; overflow: hidden; background: var(--bg-elevated); }
+.about-portrait img { width: 100%; height: 100%; object-fit: cover; }
 .about-copy h2 { font-size: clamp(30px, 4vw, 44px); color: var(--chalk); margin-bottom: 20px; }
 .about-copy p { color: var(--dim); max-width: 480px; margin: 0 0 16px; }
 
@@ -1146,6 +1147,8 @@ h1, h2, h3 {
   .header-socials { display: none; }
   .nav-toggle { display: flex; }
   .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .shop-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-list { grid-template-columns: repeat(2, 1fr); }
   .about-inner { grid-template-columns: 1fr; }
   .about-portrait { max-width: 320px; }
   .lightbox-inner { grid-template-columns: 1fr; }
@@ -1157,13 +1160,40 @@ h1, h2, h3 {
   .review-card { width: 300px; }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .wrap { padding: 0 20px; }
-  .project-grid { grid-template-columns: 1fr; }
   .hero { padding: 64px 0 48px; }
   .filters { flex-direction: column; }
   .contact-form { max-width: 100%; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { text-align: center; }
   .review-card { width: 260px; padding: 24px; }
+
+  /* Keep 2-column grids everywhere on phones rather than collapsing to 1 —
+     just tighten the gap and scale text/spacing down so cards stay legible. */
+  .project-grid,
+  .shop-grid,
+  .services-list {
+    gap: 12px;
+  }
+  .card-body { padding: 14px 14px 16px; }
+  .card-title { font-size: 17px; }
+  .card-category { font-size: 10px; margin-bottom: 6px; }
+  .card-sport { font-size: 12px; }
+  .card-number, .card-status { font-size: 10px; padding: 4px 7px; }
+
+  .shop-body { padding: 14px 14px 16px; gap: 3px; }
+  .shop-desc { font-size: 12px; margin: 6px 0 14px; }
+  .shop-price { font-size: 11px; padding: 4px 8px; }
+  .shop-buy { padding: 10px 12px; font-size: 12px; }
+
+  .service-title { font-size: 18px; }
+  .service-tagline { font-size: 13px; }
+  .service-summary { font-size: 12px; margin-bottom: 12px; }
+  .service-includes-label { margin-bottom: 8px; }
+  .service-includes li { font-size: 12px; padding-left: 16px; }
+  .services-list { gap: 20px 12px; }
+
+  .section-head h2 { font-size: 28px; }
+  .page-title { font-size: clamp(32px, 9vw, 48px); }
 }

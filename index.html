@@ -123,6 +123,7 @@
       <li class="reveal" style="transition-delay:80ms">"Our socials look the same as they did three seasons ago."</li>
       <li class="reveal" style="transition-delay:160ms">"Nobody at the club has time to design matchday content."</li>
       <li class="reveal" style="transition-delay:240ms">"We want a crest that actually holds up on a jersey."</li>
+      <li class="reveal" style="transition-delay:320ms">"Every post looks like it was made by someone different."</li>
     </ul>
   </div>
 </section>
@@ -162,16 +163,15 @@
 <!-- ============================================= -->
 <section class="about" id="about">
   <div class="wrap about-inner">
-    <div class="about-portrait reveal">
-      <div class="placeholder-img" data-placeholder-label="images/about/portrait.jpg">
-        <span>ADD PHOTO<br>images/about/portrait.jpg</span>
-      </div>
+    <div class="about-portrait reveal" id="aboutPortrait">
+      <!-- populated by JS from data/about.json -->
     </div>
     <div class="about-copy reveal">
       <p class="kicker">ABOUT</p>
       <h2>THE DESIGNER</h2>
-      <p>Finn designs identity systems for teams and athletes — kits, crests, and the graphics that show up on a scoreboard, a jersey, or a feed on gameday. This space is for client work and the personal projects built just to push the craft further.</p>
-      <p>Replace this paragraph with your own bio. Keep it short: what you design, who you've worked with, and what you're looking for next.</p>
+      <div id="aboutBio">
+        <!-- populated by JS from data/about.json -->
+      </div>
       <a href="#contact" class="btn btn-outline">Get in touch</a>
     </div>
   </div>
