@@ -45,6 +45,9 @@
       "status": "client",
       "images": [
         {
+          "src": "/images/projects/next-up.jpg"
+        },
+        {
           "src": "/images/projects/musgrave-gameday.png"
         },
         {
@@ -52,9 +55,6 @@
         },
         {
           "src": "/images/projects/11p.png"
-        },
-        {
-          "src": "/images/projects/next-up.jpg"
         },
         {
           "src": "/images/projects/full.jpg"
