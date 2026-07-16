@@ -7,10 +7,37 @@
       "status": "client",
       "images": [
         {
+          "src": "/images/projects/surfers-away.png"
+        },
+        {
           "src": "/images/projects/gameday-tweed.png"
         },
         {
-          "src": "/images/projects/11s.png"
+          "src": "/images/projects/palmy-home.png"
+        },
+        {
+          "src": "/images/projects/surfers-gameday.jpg"
+        },
+        {
+          "src": "/images/projects/gameday.png"
+        },
+        {
+          "src": "/images/projects/musgrave-gameday.png"
+        },
+        {
+          "src": "/images/projects/potm.png"
+        },
+        {
+          "src": "/images/projects/potm.png"
+        },
+        {
+          "src": "/images/projects/cup-reschedueled.png"
+        },
+        {
+          "src": "/images/projects/coomerahome.png"
+        },
+        {
+          "src": "/images/projects/11p.png"
         }
       ],
       "description": "A full matchday content system built for Mudgeeraba SC's 2026 season — lineup graphics, result graphics, and Player of the Match templates, all pulling from one consistent visual design. Backed by a running series of premium gameday posters, so every post lands with the same polished, professional look. Built to bring a more premium feel to the club's socials all season long."
