@@ -1,0 +1,132 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where images uploaded through the admin panel land by default.
+# Individual fields below override this to keep each image type in its
+# own existing folder (images/projects, images/shop, etc).
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+site_url: ""
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    files:
+      - file: "data/projects.json"
+        label: "Projects"
+        name: "projects"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{title}} — {{status}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Sport", name: "sport", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", hint: "e.g. Kit, Branding, Social" }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: [ "client", "personal", "upcoming" ]
+                hint: "client = paid work, personal = your own project, upcoming = a project you're currently working on"
+              - label: "Photos"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.caption}}"
+                fields:
+                  - { label: "Image", name: "src", widget: "image", media_folder: "/images/projects", public_folder: "/images/projects" }
+                  - { label: "Caption", name: "caption", widget: "string", required: false, hint: "Optional — shown under the photo in the slideshow" }
+              - { label: "Description", name: "description", widget: "text" }
+
+  - name: "shop"
+    label: "Shop"
+    files:
+      - file: "data/shop.json"
+        label: "Shop Products"
+        name: "shop"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{title}} — {{price}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", hint: "e.g. Template, Poster, Pack" }
+              - { label: "Price", name: "price", widget: "string", hint: "Shown as-is, e.g. $28" }
+              - { label: "Image", name: "image", widget: "image", media_folder: "/images/shop", public_folder: "/images/shop" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Gumroad product link"
+                name: "buyUrl"
+                widget: "string"
+                hint: "Paste the full URL of your Gumroad product page. Leave as # if it isn't for sale yet."
+
+  - name: "services"
+    label: "Work With Me"
+    files:
+      - file: "data/services.json"
+        label: "Service Tiers"
+        name: "services"
+        fields:
+          - label: "Tiers"
+            name: "services"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Includes (one line each)", name: "includes", widget: "list" }
+              - { label: "Image", name: "image", widget: "image", media_folder: "/images/services", public_folder: "/images/services" }
+
+  - name: "reviews"
+    label: "Reviews"
+    files:
+      - file: "data/reviews.json"
+        label: "Testimonials"
+        name: "reviews"
+        fields:
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            summary: "{{author}} — {{role}}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", hint: "e.g. Committee, Mudgeeraba SC" }
+
+  - name: "clients"
+    label: "Clients"
+    files:
+      - file: "data/clients.json"
+        label: "Client Logos"
+        name: "clients"
+        fields:
+          - label: "Clients"
+            name: "clients"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Club / Team Name", name: "name", widget: "string" }
+              - { label: "Logo", name: "image", widget: "image", media_folder: "/images/clients", public_folder: "/images/clients" }
+
+  - name: "about"
+    label: "About"
+    files:
+      - file: "data/about.json"
+        label: "About Section"
+        name: "about"
+        fields:
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                media_folder: "/images/about"
+                public_folder: "/images/about"
+              - label: "Bio (each item is one paragraph)"
+                name: "bio"
+                widget: "list"
