@@ -159,6 +159,17 @@
         }
       ],
       "description": "*Coming Soon* Colour treatment - cleaning up a raw shot and giving it a consistent, on-brand look ready to use across socials."
+    },
+    {
+      "title": "GCK Girls Cup",
+      "sport": "Football",
+      "category": "Poster",
+      "status": "upcoming",
+      "images": [
+        {
+          "src": "/images/projects/girls-cup-2.png"
+        }
+      ]
     }
   ]
 }
