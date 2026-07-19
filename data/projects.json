@@ -171,6 +171,21 @@
         }
       ],
       "description": "*Coming Soon* Colour treatment - cleaning up a raw shot and giving it a consistent, on-brand look ready to use across socials."
+    },
+    {
+      "title": "West Bromwich Albion — Logo Redesign",
+      "sport": "Football",
+      "category": "Logo Design",
+      "status": "personal",
+      "description": "A personal concept blending West Bromwich Albion's classic badge history with a more modern crest structure — pulling in elements from the club's older badges and reworking them into a cleaner, more contemporary mark. Built as a design exercise in honouring a club's heritage while giving the identity a sharper, more current feel.",
+      "images": [
+        {
+          "src": "/images/projects/wba.png"
+        },
+        {
+          "src": "/images/projects/compare.png"
+        }
+      ]
     }
   ]
 }
