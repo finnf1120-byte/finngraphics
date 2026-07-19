@@ -104,6 +104,18 @@
       "description": "An ongoing series of sport posters created throughout the 2025/2026 season - each built to give the moment its own poster-worthy treatment rather than a quick generic template. A running showcase of the poster work coming out of the sport seasons as they unfold."
     },
     {
+      "title": "Gold Coast Knights — Girls Cup 2026 Poster",
+      "sport": "Football",
+      "category": "Poster",
+      "status": "client",
+      "images": [
+        {
+          "src": "/images/projects/girls-cup-2.png"
+        }
+      ],
+      "description": "A poster designed for the Girls Cup 2026, hosted by Gold Coast Knights — completed and ready ahead of the event, though the tournament itself was later postponed. Included here to show the finished work rather than let it sit unused."
+    },
+    {
       "title": "Mudgeeraba SC — Club Rebrand",
       "description": "A full identity refresh for Mudgeeraba SC a tightened colour palette, and a type system built to hold up everywhere on any graphic. Delivered with a simple brand guide so anyone at the club can apply it consistently, without needing a designer on hand for every new post.\n",
       "sport": "Football",
@@ -147,18 +159,6 @@
           "src": "/images/projects/naidocquotesolympicfcpreview.png"
         }
       ]
-    },
-    {
-      "title": "Gold Coast Knights — Girls Cup 2026 Poster",
-      "sport": "Football",
-      "category": "Poster",
-      "status": "client",
-      "images": [
-        {
-          "src": "/images/projects/girls-cup-2.png"
-        }
-      ],
-      "description": "A poster designed for the Girls Cup 2026, hosted by Gold Coast Knights — completed and ready ahead of the event, though the tournament itself was later postponed. Included here to show the finished work rather than let it sit unused."
     },
     {
       "title": "Photography - Editing",
