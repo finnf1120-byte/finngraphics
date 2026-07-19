@@ -149,9 +149,21 @@
       ]
     },
     {
-      "title": "Photography Editing",
+      "title": "Gold Coast Knights — Girls Cup 2026 Poster",
       "sport": "Football",
-      "category": "Photography Editing",
+      "category": "Poster",
+      "status": "client",
+      "images": [
+        {
+          "src": "/images/projects/girls-cup-2.png"
+        }
+      ],
+      "description": "A poster designed for the Girls Cup 2026, hosted by Gold Coast Knights — completed and ready ahead of the event, though the tournament itself was later postponed. Included here to show the finished work rather than let it sit unused."
+    },
+    {
+      "title": "Photography - Editing",
+      "sport": "Football",
+      "category": "Lightroom Editing",
       "status": "upcoming",
       "images": [
         {
@@ -159,17 +171,6 @@
         }
       ],
       "description": "*Coming Soon* Colour treatment - cleaning up a raw shot and giving it a consistent, on-brand look ready to use across socials."
-    },
-    {
-      "title": "GCK Girls Cup",
-      "sport": "Football",
-      "category": "Poster",
-      "status": "upcoming",
-      "images": [
-        {
-          "src": "/images/projects/girls-cup-2.png"
-        }
-      ]
     }
   ]
 }
