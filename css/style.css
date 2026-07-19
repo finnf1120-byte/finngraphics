@@ -297,7 +297,7 @@ h1, h2, h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 0.85fr;
+  grid-template-columns: 0.9fr 1.05fr;
   gap: 48px;
   align-items: center;
 }
@@ -329,7 +329,7 @@ h1, h2, h3 {
 .hero-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 84px);
+  grid-template-rows: repeat(3, 128px);
   gap: 12px;
 }
 .hero-tile {
