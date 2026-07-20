@@ -25,7 +25,7 @@
       "image": "/images/services/instagram-feed-mockup-03.png"
     },
     {
-      "title": "Stadium & Event Creative",
+      "title": "Stadium & Promotional",
       "tagline": "Design that shows up big on gameday.",
       "summary": "Large-format and in-venue graphics for clubs wanting a stronger presence at the ground itself — from signage to fan-facing print, built to be seen from the stands.",
       "includes": [
@@ -34,7 +34,7 @@
         "Sponsor & partner boards",
         "Fan engagement print & merch art"
       ],
-      "image": "images/services/stadium-and-event-creative.jpg"
+      "image": "/images/services/billboardupdate.png"
     }
   ]
 }
